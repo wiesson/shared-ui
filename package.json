@@ -1,8 +1,9 @@
 {
-  "name": "shared-ui",
+  "name": "@wiesson/shared-ui",
   "version": "0.1.0",
-  "private": true,
+  "main": "./src/index.ts",
   "dependencies": {
+    "@storybook/react": "^4.1.11",
     "@types/jest": "23.3.13",
     "@types/node": "10.12.18",
     "@types/react": "16.7.22",
@@ -13,7 +14,7 @@
     "typescript": "3.2.4"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "start-storybook -p 9009 -s public",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -26,5 +27,9 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
+  "devDependencies": {},
+  "author": "",
+  "license": "ISC"
 }
