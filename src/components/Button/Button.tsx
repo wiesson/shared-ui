@@ -1,7 +1,11 @@
 import * as React from "react";
 
-const Button: React.FunctionComponent = ({ children }) => (
-  <button>{children}</button>
+interface Props {
+  disabled: boolean;
+}
+
+const Button: React.FunctionComponent<Props> = ({ children, ...props }) => (
+  <button {...props}>{children}</button>
 );
 
 export default Button;
