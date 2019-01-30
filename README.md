@@ -1,4 +1,4 @@
-#### shared ui example
+## Playground a shared component library with Typescript
 
 usage
 
