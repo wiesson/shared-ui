@@ -17,6 +17,7 @@
   },
   "scripts": {
     "start": "start-storybook -p 9009 -s public",
+    "copyCss": "cd src; find . -name '*.css' -exec cp '{}' '../ui/{}' ';'",
     "build": "tsc",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
