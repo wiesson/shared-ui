@@ -1,11 +1,14 @@
 import * as React from "react";
+import styles from "./Button.module.css";
 
 export type Props = {
   disabled: boolean;
 };
 
 const Button: React.FunctionComponent<Props> = ({ children, ...props }) => (
-  <button {...props}>{children}</button>
+  <button className={styles.root} {...props}>
+    {children}
+  </button>
 );
 
 Button.defaultProps = {
