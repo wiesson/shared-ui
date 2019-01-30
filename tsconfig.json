@@ -11,7 +11,7 @@
     "resolveJsonModule": true,
     // "isolatedModules": true,
     "declaration": true,
-    "jsx": "preserve",
+    "jsx": "react",
     "outDir": "ui"
   },
   "include": ["src/**/*"],
